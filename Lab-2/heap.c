@@ -124,18 +124,18 @@ int main()
     ll n,i,x,size,num;
     scanf("%lld",&n);
     	
-	for(i=1;i<=n;i++)
+    for(i=1;i<=n;i++)
     {
        	scanf("%lld",&x);
-		num = i;
-		size = 0;
-		while(num!=0)
-		{
-			pos[size] = (num%2);
-			num/= 2;
-			size++;
-		}
-		//printf("%lld\n",size);
+	num = i;
+	size = 0;
+	while(num!=0)
+	{
+		pos[size] = (num%2);
+		num/= 2;
+		size++;
+	}
+	//printf("%lld\n",size);
        	insert(x,size);
     }
     printLevelOrder(root);
